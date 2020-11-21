@@ -6,11 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
-@RestController
-@RequestMapping("/artists")
+//@RestController
 public class ArtistController {
+    /*
     private final ArtistRepository artistRepository;
 
     @Autowired
@@ -51,6 +50,6 @@ public class ArtistController {
     @GetMapping("/{id}")
     public Artist getArtist(@PathVariable long id) {
         return artistRepository.findById(id).get();
-    }
+    }*/
 
 }

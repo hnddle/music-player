@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/tracks")
+//@RestController
+//@RequestMapping("/tracks")
 public class TrackController {
     /*
     private final TrackRepository trackRepository;
