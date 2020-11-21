@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//@RestController
+@RestController
 public class ArtistController {
     /*
     private final ArtistRepository artistRepository;
