@@ -9,10 +9,9 @@ import java.util.List;
 @Entity
 @Data
 public class Album {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private String albumTitle;
+    private String title;
     private String date;
 
     @OneToMany(mappedBy = "album", fetch = FetchType.LAZY)

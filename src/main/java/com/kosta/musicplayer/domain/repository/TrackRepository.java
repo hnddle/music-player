@@ -2,9 +2,9 @@ package com.kosta.musicplayer.domain.repository;
 
 import com.kosta.musicplayer.domain.Track;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@Repository
+@RepositoryRestResource
 public interface TrackRepository extends JpaRepository<Track, Long> {
 
 }

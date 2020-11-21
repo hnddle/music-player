@@ -8,10 +8,9 @@ import java.util.List;
 @Entity
 @Data
 public class Artist {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private String artistName;
+    private String name;
     private Integer age;
 
     @OneToMany(mappedBy = "artist", fetch = FetchType.LAZY)

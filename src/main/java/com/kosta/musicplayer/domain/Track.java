@@ -7,9 +7,8 @@ import javax.persistence.*;
 @Entity
 @Data
 public class Track {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long Id;
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String title;
     private float rating;
     private int len;

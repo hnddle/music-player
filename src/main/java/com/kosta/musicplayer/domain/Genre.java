@@ -12,7 +12,7 @@ public class Genre {
     @Id
     private long id;
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String genreName;
+    private String name;
 
     @OneToMany(mappedBy = "genre", fetch = FetchType.LAZY)
     private List<Track> tracks;
